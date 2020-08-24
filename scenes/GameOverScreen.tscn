@@ -1,0 +1,132 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://monogram_extended.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Clear.theme" type="Theme" id=2]
+[ext_resource path="res://scripts/GameOverScreen.gd" type="Script" id=3]
+[ext_resource path="res://sounds/Music/A Life.ogg" type="AudioStream" id=4]
+[ext_resource path="res://MonogramMedium.tres" type="DynamicFont" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 80
+font_data = ExtResource( 1 )
+
+[node name="GameOverScreen" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.227451, 0.227451, 0.227451, 0.686275 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Margin" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 50.0
+margin_right = -50.0
+margin_bottom = -50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Center" type="CenterContainer" parent="Margin"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Margin/Center"]
+margin_left = 262.0
+margin_top = 166.0
+margin_right = 598.0
+margin_bottom = 274.0
+
+[node name="Retry" type="Button" parent="Margin/Center/VBox"]
+margin_right = 336.0
+margin_bottom = 52.0
+focus_neighbour_bottom = NodePath("../ReturnToMenu")
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+text = "Retry"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnToMenu" type="Button" parent="Margin/Center/VBox"]
+margin_top = 56.0
+margin_right = 336.0
+margin_bottom = 108.0
+focus_neighbour_top = NodePath("../Retry")
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+text = "Return to Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOver" type="Label" parent="Margin"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -135.0
+margin_right = 135.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 2 )
+text = "Dimdrab died..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterScore" type="CenterContainer" parent="Margin"]
+anchor_right = 1.0
+margin_top = 62.0
+margin_bottom = 26.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Margin/CenterScore"]
+margin_left = 430.0
+margin_right = 430.0
+margin_bottom = 65.0
+
+[node name="Score" type="Label" parent="Margin/CenterScore/VBox"]
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 3 )
+text = "012345"
+align = 1
+
+[node name="NewHighscore" type="Label" parent="Margin/CenterScore/VBox"]
+visible = false
+margin_top = 69.0
+margin_right = 180.0
+margin_bottom = 95.0
+custom_fonts/font = ExtResource( 5 )
+text = "New Highscore!"
+align = 1
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="timeout" from="Timer" to="." method="onTimerTimeout"]
+[connection signal="pressed" from="Margin/Center/VBox/Retry" to="." method="onRetryPressed"]
+[connection signal="pressed" from="Margin/Center/VBox/ReturnToMenu" to="." method="onReturnToMenuPressed"]

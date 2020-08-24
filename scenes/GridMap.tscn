@@ -1,0 +1,396 @@
+[gd_scene load_steps=58 format=2]
+
+[ext_resource path="res://textures/Ground/Ground1.png" type="Texture" id=1]
+[ext_resource path="res://textures/Ground/Ground2.png" type="Texture" id=2]
+[ext_resource path="res://textures/Ground/Ground3.png" type="Texture" id=3]
+[ext_resource path="res://textures/Ground/Ground5.png" type="Texture" id=4]
+[ext_resource path="res://textures/Ground/Ground9.png" type="Texture" id=5]
+[ext_resource path="res://textures/Ground/Ground7.png" type="Texture" id=6]
+[ext_resource path="res://textures/Ground/Ground4.png" type="Texture" id=7]
+[ext_resource path="res://textures/Ground/Ground6.png" type="Texture" id=8]
+[ext_resource path="res://textures/Ground/Ground10.png" type="Texture" id=9]
+[ext_resource path="res://textures/Ground/Ground8.png" type="Texture" id=10]
+[ext_resource path="res://textures/Water/Water12.png" type="Texture" id=11]
+[ext_resource path="res://textures/Water/Water3.png" type="Texture" id=12]
+[ext_resource path="res://textures/Water/Water4.png" type="Texture" id=13]
+[ext_resource path="res://textures/Water/Water5.png" type="Texture" id=14]
+[ext_resource path="res://textures/Water/Water6.png" type="Texture" id=15]
+[ext_resource path="res://textures/Water/Water7.png" type="Texture" id=16]
+[ext_resource path="res://textures/Water/Water1.png" type="Texture" id=17]
+[ext_resource path="res://textures/Water/Water2.png" type="Texture" id=18]
+[ext_resource path="res://textures/Water/Water8.png" type="Texture" id=19]
+[ext_resource path="res://textures/Water/Water9.png" type="Texture" id=20]
+[ext_resource path="res://textures/Water/Water10.png" type="Texture" id=21]
+[ext_resource path="res://textures/Water/Water11.png" type="Texture" id=22]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=26]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="ConcavePolygonShape" id=5]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="ConcavePolygonShape" id=7]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 7 )
+
+[sub_resource type="ConcavePolygonShape" id=9]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 4 )
+
+[sub_resource type="ConcavePolygonShape" id=11]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="ConcavePolygonShape" id=13]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_texture = ExtResource( 6 )
+
+[sub_resource type="ConcavePolygonShape" id=15]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="ConcavePolygonShape" id=17]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 5 )
+
+[sub_resource type="ConcavePolygonShape" id=19]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="ConcavePolygonShape" id=21]
+data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1 )
+
+[sub_resource type="PlaneMesh" id=22]
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_texture = ExtResource( 17 )
+
+[sub_resource type="BoxShape" id=24]
+extents = Vector3( 1, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_texture = ExtResource( 18 )
+
+[sub_resource type="SpatialMaterial" id=36]
+albedo_texture = ExtResource( 12 )
+
+[sub_resource type="SpatialMaterial" id=27]
+albedo_texture = ExtResource( 13 )
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_texture = ExtResource( 14 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_texture = ExtResource( 15 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_texture = ExtResource( 16 )
+
+[sub_resource type="SpatialMaterial" id=31]
+albedo_texture = ExtResource( 19 )
+
+[sub_resource type="SpatialMaterial" id=32]
+albedo_texture = ExtResource( 20 )
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_texture = ExtResource( 21 )
+
+[sub_resource type="SpatialMaterial" id=34]
+albedo_texture = ExtResource( 22 )
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_texture = ExtResource( 11 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Ground1" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = SubResource( 26 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground1/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="Ground2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground2/StaticBody"]
+shape = SubResource( 5 )
+
+[node name="Ground3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 6 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground3/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Ground4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 8 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground4/StaticBody"]
+shape = SubResource( 9 )
+
+[node name="Ground5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground5/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="Ground6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 12 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground6/StaticBody"]
+shape = SubResource( 13 )
+
+[node name="Ground7" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 14 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground7/StaticBody"]
+shape = SubResource( 15 )
+
+[node name="Ground8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 16 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground8/StaticBody"]
+shape = SubResource( 17 )
+
+[node name="Ground9" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 18 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground9/StaticBody"]
+shape = SubResource( 19 )
+
+[node name="Ground10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 20 )
+
+[node name="StaticBody" type="StaticBody" parent="Ground10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground10/StaticBody"]
+shape = SubResource( 21 )
+
+[node name="Water1" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 23 )
+
+[node name="StaticBody" type="StaticBody" parent="Water1" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water1/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 25 )
+
+[node name="StaticBody" type="StaticBody" parent="Water2" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water2/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 36 )
+
+[node name="StaticBody" type="StaticBody" parent="Water3" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water3/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 27 )
+
+[node name="StaticBody" type="StaticBody" parent="Water4" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water4/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 28 )
+
+[node name="StaticBody" type="StaticBody" parent="Water5" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water5/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 29 )
+
+[node name="StaticBody" type="StaticBody" parent="Water6" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water6/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water7" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 30 )
+
+[node name="StaticBody" type="StaticBody" parent="Water7" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water7/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 31 )
+
+[node name="StaticBody" type="StaticBody" parent="Water8" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water8/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water9" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 32 )
+
+[node name="StaticBody" type="StaticBody" parent="Water9" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water9/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 33 )
+
+[node name="StaticBody" type="StaticBody" parent="Water10" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water10/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water11" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 34 )
+
+[node name="StaticBody" type="StaticBody" parent="Water11" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water11/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Water12" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+mesh = SubResource( 22 )
+material/0 = SubResource( 35 )
+
+[node name="StaticBody" type="StaticBody" parent="Water12" groups=[
+"Water",
+]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Water12/StaticBody"]
+shape = SubResource( 24 )

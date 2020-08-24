@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Loathe.ogg-c694d6ae403c46eec892eff4b14642cf.oggstr"
+
+[deps]
+
+source_file="res://sounds/Music/Loathe.ogg"
+dest_files=[ "res://.import/Loathe.ogg-c694d6ae403c46eec892eff4b14642cf.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
